@@ -6644,8 +6644,13 @@ static int mov_seek_fragment(AVFormatContext *s, AVStream *st, int64_t timestamp
     return 0;
 }
 
+static void hello() {
+
+}
+
 static int mov_seek_stream(AVFormatContext *s, AVStream *st, int64_t timestamp, int flags)
 {
+    hello();
     MOVStreamContext *sc = st->priv_data;
     int sample, time_sample;
     unsigned int i;
